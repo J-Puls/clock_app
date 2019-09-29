@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Clock App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="clockApp.css">
+
+</head>
+
+<body>
+    <img id="img1" class="gif" src="https://thumbs.gfycat.com/PlainRelievedKitty-size_restricted.gif">
+    <img id="img2" class="gif" src="https://thumbs.gfycat.com/PlainRelievedKitty-size_restricted.gif">
+    <div id="timeContainer">
+        <h2>The Time is Currently: <br><span id="currentTime"></span></h2>
+    </div>
+    <div id="alarmContainer">
+        <h2>Set alarm for:</h2>
+        <h3 id="setTime">------------</h3>
+        <div id="inputs">
+            <select class="ui dropdown" name="hour" id="hour"></select>
+            <select class="ui dropdown" name="minute" id="minute"></select>
+            <select class="ui dropdown" name="second" id="second"></select>
+            <select class="ui dropdown" name="timeOfDay" id="timeOfDay">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+        <div class="btn">
+            <input class="ui big red button" id="set" type="submit" value="Set">
+        </div>
+        <div class="btn">
+            <button id="reset" class="ui big green button clicked">RESET</button>
+        </div>
+    </div>
+    <script src="clockApp.js"></script>
+</body>
+
+</html>
